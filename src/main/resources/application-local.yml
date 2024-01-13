@@ -1,0 +1,29 @@
+server:
+  port: 8082
+  servlet:
+    context-path: /api/v1
+
+cvs:
+  datasource:
+    jdbc-url: jdbc:postgresql://localhost:5432/charity_volunteer
+    username: postgres
+    password: 159753
+    driver-class-name: org.postgresql.Driver
+    configuration:
+      maximum-pool-size: 30
+
+## OpenApi Settings ##
+springdoc:
+  swagger-ui:
+    disable-swagger-default-url: true
+    path: "/docs/swagger-ui.html"
+
+openapi:
+  app:
+    description: Charity Volunteer Service
+    version: 1.0.0
+    title: Charity Volunteer API
+    contact: Contact Support
+    email: info@talls.tech
+    licence: Tallstech 1.0
+    url: https://talls.tech
